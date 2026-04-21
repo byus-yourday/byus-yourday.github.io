@@ -10,7 +10,9 @@
 <body data-theme="light">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">by us.</a>
+      <a class="logo" href="/" aria-label="바이어스 홈">
+        <img src="/assets/images/logo.png" alt="바이어스">
+      </a>
       <div class="nav-area">
         <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>☰</button>
         <nav aria-label="주 메뉴">
@@ -31,9 +33,12 @@
     <section class="section">
       <div class="container hero">
         <div>
-          <h1>바이어스 <span class="muted">by us.</span></h1>
-          <p class="lead">축의대 운영을 “부탁”이 아니라 “원칙”으로.</p>
-          <p>하객 응대, 명부, 식권, 축의금 접수와 정산까지. 정해진 기록 방식으로 조용하고 정확하게 운영합니다.</p>
+          <h1 class="hero-title">
+            바이어스
+            <img class="hero-title-logo" src="/assets/images/logo.png" alt="by us.">
+          </h1><br>
+          <p class="lead">부부가 함께 운영하는 축의대</p>
+          <p>하객 응대, 축의금 수납, 식권 배부, 정산까지.<br>정해진 기록 방식으로 조용하고 정확하게 운영합니다.</p><br>
           <div class="actions">
             <a class="btn btn-primary" href="/booking/">예약 과정 보기</a>
             <a class="btn btn-secondary" href="/pricing/">가격 보기</a>
@@ -50,10 +55,15 @@
     <section class="section">
       <div class="container grid grid-2">
         <div>
-          <h2>축의대, 왜 어려울까요?</h2>
+          <h2>축의대, 왜 어려울까요?</h2><br>
           <ul class="bullet-list">
-            <li>돈과 사람이 동시에 몰립니다. 한 번의 실수는 신뢰 문제로 번집니다.</li>
-            <li>가족, 친구에게 맡기면 역할이 모호해지고 책임이 남습니다.</li>
+            <li>"식권은 줬는데, 기록이 안됐네?"</li>
+            <li>"봉투만 받고 금액을 안적었잖아?"</li>
+            <li>"빈 봉투만 내고 식권을 받아가면 어떡하지?"</li>
+            <li>"금액이 안맞는데... 여쭤볼 수도 없고..."</li>
+            <br>
+            <li>가족, 친구에게 맡겼다가 실수가 있다면, 요청도 책임도 모호해집니다.</li>
+             <li>다수의 하객 응대와 축의금 수납을 동시에 진행해야 합니다.</li>
             <li>현장은 빠르게 흘러가는데, 기록과 확인은 느리면 안 됩니다.</li>
           </ul>
         </div>
@@ -67,25 +77,25 @@
 
     <section class="section">
       <div class="container">
-        <h2>바이어스가 대신합니다</h2>
+        <h2>바이어스가 대신합니다</h2><br>
         <div class="grid grid-3">
           <article class="card">
-            <h3>하객 응대, 명부 관리</h3>
+            <h3>하객 응대 / 방명록 관리</h3>
             <ul>
-              <li>안내 멘트와 흐름을 정리해 대기줄을 줄입니다.</li>
-              <li>신랑·신부측 전달사항을 일관되게 안내합니다.</li>
-              <li>명부/특이사항을 기록 방식으로 관리합니다.</li>
+              <li>안내 멘트 흐름을 정리해 대기줄을 줄입니다.</li>
+              <li>전달사항을 일관되게 안내합니다.</li>
+              <li>방명록/특이사항을 기록으로 관리합니다.</li>
             </ul>
             <div class="image-slot has-image">
               <img src="/assets/images/home-service-guestbook.webp.png" alt="하객 명부 아이콘">
             </div>
           </article>
           <article class="card">
-            <h3>축의금 접수, 정산</h3>
+            <h3>축의금 접수</h3>
             <ul>
-              <li>빈 봉투 확인 및 기준에 따른 처리.</li>
-              <li>1차 기입, 2차 확인 등 이중 확인 흐름.</li>
-              <li>예식 종료 후 최종 대조 및 인계 기록 정리.</li>
+              <li>빈 봉투 기준이 있다면 확인합니다.</li>
+              <li>식권 개수나 축의금을 기입합니다.</li>
+              <li>이중 검수를 진행합니다.</li>
             </ul>
             <div class="image-slot has-image">
               <img src="/assets/images/home-service-settlement.webp.png" alt="봉투 장부 정산 아이콘">
@@ -94,9 +104,9 @@
           <article class="card">
             <h3>식권 배부</h3>
             <ul>
-              <li>필요한 수량만 배부(과배부 방지).</li>
-              <li>혼주 요청/현장 변동에 즉시 대응.</li>
-              <li>장부/기록과 흐름이 맞도록 운영.</li>
+              <li>계좌이체 기준을 확인합니다.</li>
+              <li>혼주 요청/현장 변동에 즉시 대응합니다.</li>
+              <li>부족시 추가 발급도 진행합니다.</li>
             </ul>
             <div class="image-slot has-image">
               <img src="/assets/images/home-service-ticket.webp.png" alt="식권 티켓 아이콘">
@@ -108,21 +118,23 @@
 
     <section class="section">
       <div class="container">
-        <h2>과연 믿을 수 있을까요?</h2>
+        <h2>과연 믿을 수 있을까요?</h2><br>
         <div class="grid grid-2">
           <article class="card">
-            <h3>사업자 등록 완료</h3>
-            <p>정식 운영 주체로서 책임 하에 진행합니다.</p>
+            <h3>사업자 등록 / 현금 영수증 </h3>
+            <ul>
+              <li>계약시 사업자 등록증을 보내드립니다.</li>
+              <li>최종 잔금 입금시, 계약금 + 잔금의 현금영수증을 당일 발행해드립니다.</li>
+            </ul>
             <div class="image-slot has-image">
               <img src="/assets/images/home-trust-license.webp.png" alt="사업자 등록 상징 이미지">
             </div>
           </article>
           <article class="card">
-            <h3>신분 확인 및 현장 기록</h3>
+            <h3>신분 확인 / 현장 녹화</h3>
             <ul>
-              <li>담당자 신분 확인 가능</li>
-              <li>정해진 원칙과 기록 방식으로 운영</li>
-              <li>인계 시점에 확인 가능한 형태로 정리해 전달</li>
+              <li>계약시 대표 신분증을 확인시켜드립니다.</li>
+              <li>총 2대의 카메라로 녹화를 진행 후, 당일 영상을 보내드립니다. </li>
             </ul>
             <div class="image-slot has-image">
               <img src="/assets/images/home-trust-handover.webp.png" alt="체크리스트 기록 인계 상징 이미지">
@@ -133,10 +145,10 @@
     </section>
 
     <section class="section">
-      <div class="container card">
-        <p class="lead">예식일과 장소만 알려주시면, 가능한 팀 구성과 운영 방식을 안내드립니다.</p>
+      <div class="container card cta-card">
+        <p class="lead">문의는 카카오톡 사업자 채널로 진행됩니다. <br>예약 버튼을 클릭해 양식대로 입력해주세요💛</p>
         <div class="actions">
-          <a class="btn btn-primary" href="/booking/">문의/예약하기</a>
+          <a class="btn btn-primary" href="https://l.instagram.com/?u=https%3A%2F%2Fpf.kakao.com%2F_CSMyn%2Ffriend%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnqqvTunGNBtwDkqh27tpfuA5X7VSUhpUvAXiHFqIeq1M68KRLUPvFcY2H0zg_aem_nAglX6bFg7uw_y33Rl9DQA&e=AT6ydL9f4boC8-2ueC_mOJrycMi0o-RhwIZv2Z8p3DyoVPbMD8MLXaIgxADITA4OnvS0yjOcsTAbIhgY87xg5kNqA-chGiTjpy0zpovy6Q"> 문의 / 예약하기 </a>
         </div>
       </div>
     </section>
@@ -145,7 +157,6 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© by us. / Bias</div>
-      <a href="#">문의 링크</a>
       <div>정해진 원칙과 기록 방식으로 운영합니다.</div>
     </div>
   </footer>

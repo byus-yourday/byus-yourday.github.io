@@ -2,7 +2,7 @@
   --primary: #824f4e;
   --bg: #f3efec;
   --surface: rgba(255, 255, 255, 0.45);
-  --text: #1e1e1e;
+  --text: var(--primary);
   --text-on-dark: #f3efec;
   --border: rgba(130, 79, 78, 0.22);
   --muted: rgba(130, 79, 78, 0.72);
@@ -52,10 +52,17 @@ a:hover { text-decoration: underline; }
 }
 
 .logo {
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 1.3rem;
-  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: 34px;
+  max-width: 132px;
+  object-fit: contain;
 }
 
 .nav-area { display: flex; align-items: center; gap: 12px; }
@@ -86,7 +93,7 @@ a:hover { text-decoration: underline; }
   display: inline-block;
   padding: 9px 12px;
   border-radius: 10px;
-  color: var(--text);
+  color: var(--primary);
   border: 1px solid transparent;
 }
 
@@ -115,6 +122,23 @@ p { margin: 0 0 12px; }
 .lead { font-size: 1.08rem; }
 .muted { color: var(--muted); }
 
+.hero-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: var(--primary);
+  font-size: clamp(1.8rem, 4vw, 2.85rem);
+}
+
+.hero-title-logo {
+  display: inline-block;
+  width: auto;
+  height: 0.82em;
+  max-width: min(180px, 42vw);
+  object-fit: contain;
+}
+
 .grid { display: grid; gap: 18px; }
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -129,6 +153,60 @@ p { margin: 0 0 12px; }
 }
 
 .card ul { margin: 0; padding-left: 18px; }
+
+.cta-card {
+  text-align: center;
+}
+
+.cta-card .actions {
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.pricing-card {
+  text-align: center;
+}
+
+.sealing-grid {
+  margin-top: 22px;
+}
+
+.sealing-section {
+  text-align: center;
+}
+
+.sealing-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sealing-card h4 {
+  margin: 0 0 10px;
+}
+
+.sealing-card .image-slot {
+  min-height: 150px;
+  margin-bottom: 18px;
+}
+
+.sealing-card .summary {
+  margin: auto 0 0;
+  padding-top: 16px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.text-separator {
+  width: 100%;
+  height: 1px;
+  margin: 14px 0;
+  border: 0;
+  background: var(--border);
+}
 
 .actions {
   display: flex;

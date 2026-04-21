@@ -10,7 +10,9 @@
 <body data-theme="light">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">by us.</a>
+      <a class="logo" href="/" aria-label="바이어스 홈">
+        <img src="/assets/images/logo.png" alt="바이어스">
+      </a>
       <div class="nav-area">
         <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>☰</button>
         <nav aria-label="주 메뉴">
@@ -30,41 +32,105 @@
   <main>
     <section class="section">
       <div class="container">
-        <h1>Simple pricing</h1>
-        <p class="lead">인원에 따라 팀을 구성하고, 동일한 원칙으로 운영합니다.</p>
-        <div class="grid grid-2">
-          <article class="card">
-            <h2>2인 서비스 | 350,000원</h2>
-            <p>기본 운영에 적합</p>
-            <p>접수/식권/기록 흐름 중심</p>
-            <p class="muted">포함: 하객 응대 및 안내 / 식권 배부 운영 / 축의금 접수 및 기록 방식 운영 / 예식 종료 후 최종 정리 및 인계</p>
-            <div class="image-slot has-image">
-              <img src="/assets/images/pricing-plan-2.webp.png" alt="2인 플랜 일러스트">
-            </div>
-          </article>
-          <article class="card">
-            <h2>4인 서비스 | 650,000원</h2>
-            <p>혼잡도가 높거나 복수 라인 운영에 적합</p>
-            <p>빠른 응대 + 이중 확인 강화</p>
-            <p class="muted">포함: 위와 동일</p>
-            <div class="image-slot has-image">
-              <img src="/assets/images/pricing-plan-4.webp.png" alt="4인 플랜 일러스트">
-            </div>
-          </article>
+        <h1>가격</h1>
+        <p class="lead">하객 인원에 따라 팀을 구성하고, 동일한 원칙으로 운영합니다.</p><br>
+        <h2>상품 구성</h2>
+        <div class="grid grid-3">
+            <article class="card pricing-card">
+                <h2>✨ 양측 1인</h2><h2>350,000원</h2>
+                <hr class="text-separator">
+                <p><b>신랑</b> & <b>신부</b> 양측 축의대를 각각 <b>1명</b>이 운영</p>
+                <p>양측 하객 <b>100명 이하</b>인 경우 가능</p>
+                <hr class="text-separator">
+                <p class="muted">소규모 & 스몰웨딩에 적합한 서비스입니다.</p>
+                <p class="muted">축의대에 카메라 1대씩, 총 2대로 녹화합니다.</p>
+                <div class="image-slot has-image">
+                <img src="/assets/images/pricing-plan-2-1.png" alt="양측 1인 플랜 일러스트">
+                </div>
+            </article>
+            <article class="card pricing-card">
+                <h2>✨ 한측 2인</h2><h2>350,000원</h2>
+                <hr class="text-separator">
+                <p><b>신랑</b> / <b>신부</b> 한측의 축의대를 <b>2명</b>이 운영</p>
+                <p>한측 하객 <b>150명</b> 이하인 경우 가능</p>
+                <hr class="text-separator">
+                <p class="muted">일반 예식의 한측을 담당하는 서비스입니다.</p>
+                <p class="muted">축의대에 카메라 총 2대로 녹화합니다.</p>
+                <div class="image-slot has-image">
+                <img src="/assets/images/pricing-plan-2.webp.png" alt="2인 플랜 일러스트">
+                </div>
+            </article>
+            <article class="card pricing-card">
+                <h2>✨ 양측 2인</h2><h2>650,000원</h2>
+                <hr class="text-separator">
+                <p><b>신랑</b> / <b>신부</b> 양측의 축의대를 각각 <b>2명</b>이 운영</p>
+                <p>양측 하객 <b>300명</b> 이하인 경우 가능</p>
+                <hr class="text-separator">
+                <p class="muted">일반 예식의 양측을 담당하는 서비스입니다.</p>
+                <p class="muted">축의대에 카메라 1대씩, 총 2대로 녹화합니다.</p>
+                <div class="image-slot has-image">
+                <img src="/assets/images/pricing-plan-4.webp.png" alt="4인 플랜 일러스트">
+                </div>
+            </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid grid-2">
-        <div>
-          <h2>밀봉 기준(A/B/C)</h2>
-          <p><strong>A. 빠른 진행(현장 흐름 우선)</strong>: 혼잡 최소화에 유리 / 예식 후 정리 비중이 큼</p>
-          <p><strong>B. 균형(흐름과 확인의 균형)</strong>: 현장 진행과 확인을 함께 가져감</p>
-          <p><strong>C. 확인 강화(정산/계수 중심)</strong>: 확인 절차를 더 촘촘히 / 기록·대조를 강화</p>
-        </div>
-        <div class="image-slot has-image">
-          <img src="/assets/images/pricing-abc.webp.png" alt="A B C 비교 일러스트">
+      <div class="container sealing-section">
+        <h2>축의금 밀봉 기준</h2>
+        <p class="lead">현장 흐름과 확인 범위에 따라 세 가지 방식 중 선택할 수 있습니다.</p>
+        <div class="grid grid-3 sealing-grid">
+          <article class="card sealing-card">
+            <h2>A</h2> <h3>💌 받은 그대로 밀봉</h3>
+            <div class="image-slot"><img src="/assets\images\type_a.png" alt="A타입 봉투"> </div>
+            <p>하객 분께 받은 축의금 봉투를 열지 않고,<br> <b>그대로 바로 밀봉</b>하는 방식입니다.</p>
+            <p>봉투에는 식권 배부 개수만 기입됩니다.</p>
+            <p>선택 사항으로 스테이플러 밀봉도 가능합니다.</p>
+            <p>현장 흐름이 가장 빠르고, 봉투를 개봉하는 과정에서 생길 수 있는 우려를 줄일 수 있습니다.</p><br>
+            <hr class="text-separator">
+            <h4>추천하는 경우</h4>
+            <ul>
+              <li>하객이 많을 것으로 예상되는 경우</li>
+              <li>현장 흐름, 속도를 가장 우선하고 싶은 경우</li>
+              <li>봉투를 열지 않는게 편안하게 느껴지는 경우</li>
+            </ul>
+            <p class="summary">“봉투를 열지 않고 밀봉하는 가장 깔끔한 방식”</p>
+          </article>
+
+          <article class="card sealing-card">
+            <h2>B</h2> <h3>💌 금액 확인 후 봉투째 밀봉</h3>
+            <div class="image-slot"><img src="/assets\images\type_b.png" alt="B타입 봉투"> </div>
+            <p>봉투를 열어 금액만 확인한 뒤,<br><b>다시 봉투에 정리하여 밀봉</b>하는 방식입니다.</p>
+            <p>봉투에는 축의금, 식권 배부 개수가 기입됩니다.</p>
+            <p>선택 사항으로 스테이플러 밀봉도 가능합니다.</p>
+            <p>현장 운영과 금액 확인을 함께 가져갈 수 있는 무난한 방식입니다.</p><br>
+            <hr class="text-separator">
+            <h4>추천하는 경우</h4>
+            <ul>
+              <li>금액은 현장에서 한 번 확인해두고 싶은 경우</li>
+              <li>속도, 확인 절차를 적당히 가져가고 싶은 경우</li>
+              <li>가장 무난한 방식으로 진행하고 싶은 경우</li>
+            </ul>
+            <p class="summary">“금액만 확인한 뒤 밀봉하는 가장 무난한 방식”</p>
+          </article>
+
+          <article class="card sealing-card">
+            <h2>C</h2> <h3>💌 금액 확인 및 권종별 계수</h3>
+            <div class="image-slot"><img src="/assets\images\type_c.png" alt="C타입 봉투"> </div>
+            <p>봉투 내 금액을 확인하고, 현금을 계수하여<br><b>봉투와 축의금을 분리 후 밀봉</b>하는 방식입니다.</p>
+            <p>봉투에는 축의금, 식권 배부 개수가 기입됩니다.</p>
+            <p>축의금은 100만원 단위로 묶음 정리됩니다.</p>
+            <p>봉투와 실제 금액을 나누어 정리하게 되어, 이후 정산이 더 쉬운 방식입니다.</p><br>
+            <hr class="text-separator">
+            <h4>추천하는 경우</h4>
+            <ul>
+              <li>예식 후 정산을 더 편하게 하고 싶은 경우</li>
+              <li>금액과 현금을 구분해 정리해두고 싶은 경우</li>
+              <li>보관보다 정리 중심으로 진행하고 싶은 경우</li>
+            </ul>
+            <p class="summary">“금액 확인, 계수까지. 이후 정산이 쉬운 방식”</p>
+          </article>
         </div>
       </div>
     </section>
@@ -75,27 +141,27 @@
         <div class="accordion">
           <article class="accordion-item" data-accordion-item>
             <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-trigger-1" data-accordion-trigger>Q1 예약은 언제까지 가능한가요?</button>
-            <div class="accordion-panel" role="region" id="faq-1" aria-labelledby="faq-trigger-1" data-accordion-panel><div class="inner">A 일정과 장소, 예상 하객 수를 확인한 뒤 팀 배정 가능 여부를 안내드립니다.</div></div>
+            <div class="accordion-panel" role="region" id="faq-1" aria-labelledby="faq-trigger-1" data-accordion-panel><div class="inner">A 일정만 비어있다면, 예식일 전일에도 가능합니다. <br>일정과 장소, 예상 하객 수를 확인한 뒤 정확한 예약 가능 여부를 안내드립니다.</div></div>
           </article>
           <article class="accordion-item" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-trigger-2" data-accordion-trigger>Q2 가족/지인이 일부 역할을 같이 해도 되나요?</button>
-            <div class="accordion-panel" role="region" id="faq-2" aria-labelledby="faq-trigger-2" data-accordion-panel><div class="inner">A 가능합니다. 다만 책임과 동선이 섞이면 효율이 떨어질 수 있어 역할 구분을 추천드립니다.</div></div>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-trigger-2" data-accordion-trigger>Q2 가족/지인이 옆에 함께 있어도 되나요?</button>
+            <div class="accordion-panel" role="region" id="faq-2" aria-labelledby="faq-trigger-2" data-accordion-panel><div class="inner">A 가능합니다. 다만 책임과 동선이 섞이면 효율이 떨어질 수 있어 별도의 역할 없이 옆에 계시는 것을 추천드립니다.</div></div>
           </article>
           <article class="accordion-item" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-trigger-3" data-accordion-trigger>Q3 예식 당일 변동사항이 생기면요?</button>
-            <div class="accordion-panel" role="region" id="faq-3" aria-labelledby="faq-trigger-3" data-accordion-panel><div class="inner">A 현장 변동은 흔합니다. 혼주 요청과 현장 상황에 맞춰 우선순위를 조정해 운영합니다.</div></div>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-trigger-4" data-accordion-trigger>Q3 축의금 분실이 걱정돼요.</button>
+            <div class="accordion-panel" role="region" id="faq-4" aria-labelledby="faq-trigger-4" data-accordion-panel><div class="inner">A 모든 과정을 녹화하며, 확인 단계를 분리해 실수 확률을 낮추고, 반드시 정해진 인계자 분께만 인계해드립니다.</div></div>
           </article>
           <article class="accordion-item" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-trigger-4" data-accordion-trigger>Q4 축의금 분실이나 오기재가 걱정돼요.</button>
-            <div class="accordion-panel" role="region" id="faq-4" aria-labelledby="faq-trigger-4" data-accordion-panel><div class="inner">A 기록과 확인 단계를 분리해 실수 확률을 낮추고, 인계 시점에 확인 가능한 형태로 정리합니다.</div></div>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-trigger-5" data-accordion-trigger>Q4 계좌이체 하객 대응 방식은요?</button>
+            <div class="accordion-panel" role="region" id="faq-5" aria-labelledby="faq-trigger-5" data-accordion-panel><div class="inner">A 고객님이 원하시는 방법에 따라 간단하게 장부 기재 후 배부하기도 하고, 이체 내역을 직접 확인 후 배부하기도 합니다.</div></div>
           </article>
           <article class="accordion-item" data-accordion-item>
-            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-trigger-5" data-accordion-trigger>Q5 식권은 하객 수만큼 배부하나요?</button>
-            <div class="accordion-panel" role="region" id="faq-5" aria-labelledby="faq-trigger-5" data-accordion-panel><div class="inner">A “필요한 수량” 기준으로 배부하며, 과배부를 방지합니다.</div></div>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-trigger-5" data-accordion-trigger>Q5 빈 봉투를 내고 식권 받아가면 어떡하죠?</button>
+            <div class="accordion-panel" role="region" id="faq-5" aria-labelledby="faq-trigger-5" data-accordion-panel><div class="inner">A 사전 설문을 통해 고객님이 요청하시면 식권 배부 전, 빈 봉투에 대한 확인 절차를 진행하며, 해당 경우 식권을 드리지 않습니다.</div></div>
           </article>
           <article class="accordion-item" data-accordion-item>
             <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-trigger-6" data-accordion-trigger>Q6 지방/원거리도 가능한가요?</button>
-            <div class="accordion-panel" role="region" id="faq-6" aria-labelledby="faq-trigger-6" data-accordion-panel><div class="inner">A 일정/이동 조건에 따라 가능 여부가 달라 문의 주시면 안내드립니다.</div></div>
+            <div class="accordion-panel" role="region" id="faq-6" aria-labelledby="faq-trigger-6" data-accordion-panel><div class="inner">A 지역 추가금이 존재합니다. 일정/이동 조건에 따라 가능 여부가 달라 문의 주시면 안내드립니다.</div></div>
           </article>
         </div>
       </div>
