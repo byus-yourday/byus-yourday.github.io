@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spoqa-han-sans@3.0.1/css/SpoqaHanSansNeo.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body data-theme="light">
+<body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="/" aria-label="바이어스 홈">
@@ -29,19 +29,18 @@
         <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>☰</button>
         <nav aria-label="주 메뉴">
           <ul class="nav-list" data-nav-list>
-            <li><a class="nav-link" href="/">소개</a></li>
-            <li><a class="nav-link" href="/pricing/">가격</a></li>
-            <li><a class="nav-link" href="/booking/">예약</a></li>
-            <li><a class="nav-link" href="/team/">바이어스팀</a></li>
+            <li><a class="nav-link" href="/" data-target-section="hero">소개</a></li>
+            <li><a class="nav-link" href="/pricing/" data-target-section="price">가격</a></li>
+            <li><a class="nav-link" href="/booking/" data-target-section="booking">예약</a></li>
+            <li><a class="nav-link" href="/team/" data-target-section="team">바이어스팀</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환">🌙</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section">
+    <section class="section" id="booking" data-track-section data-section-name="예약 안내">
       <div class="container">
         <h1>예약</h1>
         <p class="lead">카카오톡 채널을 통해 부담없이 문의주세요.</p><br>
@@ -55,7 +54,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="booking-survey" data-track-section data-section-name="사전 설문">
       <div class="container grid grid-2">
         <div class="card">
           <h2>사전 설문</h2>
@@ -75,7 +74,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="booking-followup" data-track-section data-section-name="예약 후 진행">
       <div class="container booking-followup-section">
         <div class="section-heading-rule" aria-hidden="true"></div>
         <h2>사전 설문 이후 진행사항</h2>
@@ -115,13 +114,24 @@
         </div>
 
         <div class="actions booking-followup-actions">
-          <a class="btn btn-secondary" href="/process/">예식 당일 상세 보기</a>
+          <a class="btn btn-secondary" href="/process/" data-track="click" data-event="operation_click" data-section="booking-followup">예식 당일 상세 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking-contact" data-track-section data-section-name="문의">
+      <div class="container card cta-card">
+        <h2>문의 내용을 먼저 정리해보세요</h2>
+        <p class="lead">예식일, 예식장, 운영 범위가 아직 모두 정해지지 않아도 괜찮습니다.</p>
+        <p>입력한 내용을 바탕으로 카카오톡에 붙여넣을 문의 문구를 만들어드립니다.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#" data-inquiry-open data-source-button="booking_cta">예약 문의 문구 만들기</a>
         </div>
       </div>
     </section>
   </main>
 
-  <a class="floating-contact" href="http://pf.kakao.com/_CSMyn/chat" target="_blank" rel="noopener">문의</a>
+  <a class="floating-contact" href="#" data-inquiry-open data-source-button="booking_floating_cta">문의하기</a>
 
   <footer class="site-footer">
     <div class="container footer-inner">

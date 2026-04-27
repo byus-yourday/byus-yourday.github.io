@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spoqa-han-sans@3.0.1/css/SpoqaHanSansNeo.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body data-theme="light">
+<body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="/" aria-label="바이어스 홈">
@@ -29,27 +29,26 @@
         <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>☰</button>
         <nav aria-label="주 메뉴">
           <ul class="nav-list" data-nav-list>
-            <li><a class="nav-link" href="/">소개</a></li>
-            <li><a class="nav-link" href="/pricing/">가격</a></li>
-            <li><a class="nav-link" href="/booking/">예약</a></li>
-            <li><a class="nav-link" href="/team/">바이어스팀</a></li>
+            <li><a class="nav-link" href="/" data-target-section="hero">소개</a></li>
+            <li><a class="nav-link" href="/pricing/" data-target-section="price">가격</a></li>
+            <li><a class="nav-link" href="/booking/" data-target-section="booking">예약</a></li>
+            <li><a class="nav-link" href="/team/" data-target-section="team">바이어스팀</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환">🌙</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section">
+    <section class="section" id="hero" data-track-section data-section-name="히어로">
       <div class="container hero">
         <div>
           <h1 class="hero-title">바이어스</h1><br>
           <p class="lead">부부가 함께 운영하는 축의대</p>
           <p>하객 응대, 축의금 수납, 식권 배부, 정산까지.<br>정해진 기록 방식으로 조용하고 정확하게 운영합니다.</p><br>
           <div class="actions">
-            <a class="btn btn-primary" href="/booking/">예약 과정</a>
-            <a class="btn btn-secondary" href="/pricing/">가격</a>
+            <a class="btn btn-primary" href="#" data-inquiry-open data-source-button="hero_cta">예식일 가능 여부 확인하기</a>
+            <a class="btn btn-secondary" href="/pricing/" data-track="click" data-event="price_click" data-section="hero">가격</a>
           </div>
         </div>
         <div>
@@ -60,7 +59,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="problem" data-track-section data-section-name="문제 인식">
       <div class="container grid grid-2">
         <div>
           <h2>축의대, 왜 어려울까요?</h2><br>
@@ -83,7 +82,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="service" data-track-section data-section-name="서비스 소개">
       <div class="container">
         <h2>바이어스가 대신합니다</h2><br>
         <div class="grid grid-3">
@@ -124,7 +123,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="trust" data-track-section data-section-name="신뢰 요소">
       <div class="container">
         <h2>과연 믿을 수 있을까요?</h2><br>
         <div class="grid grid-2 trust-grid">
@@ -155,7 +154,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="references" data-track-section data-section-name="운영 레퍼런스">
       <div class="container">
         <div class="section-heading-rule" aria-hidden="true"></div>
         <h2>운영 레퍼런스</h2>
@@ -163,49 +162,49 @@
         <p class="lead center-text">다양한 예식장에서 축의대 운영을 진행하고 있습니다</p>
 
         <div class="reference-grid">
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="보타닉파크 웨딩 운영 사진" data-image-src="/assets/images/현장사진/20260321_보타닉파크웨딩.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/20260321_보타닉파크웨딩.jpg" alt="보타닉파크 웨딩 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="신도림 더링크 운영 사진" data-image-src="/assets/images/현장사진/260419_신도림더링크.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/260419_신도림더링크.jpg" alt="신도림 더링크 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="웨스틴 조선호텔 운영 사진" data-image-src="/assets/images/현장사진/20260328_웨스틴조선호텔.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/20260328_웨스틴조선호텔.jpg" alt="웨스틴 조선호텔 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="안양 더파티움 운영 사진" data-image-src="/assets/images/현장사진/20260411_안양더파티움.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/20260411_안양더파티움.jpg" alt="안양 더파티움 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="라루체 운영 사진" data-image-src="/assets/images/현장사진/20260425_라루체.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/20260425_라루체.jpg" alt="라루체 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="웨딩스퀘어 운영 사진" data-image-src="/assets/images/현장사진/20260426_웨딩스퀘어.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/20260426_웨딩스퀘어.jpg" alt="웨딩스퀘어 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="MJ 컨벤션 운영 사진" data-image-src="/assets/images/현장사진/260228_MJ.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/260228_MJ.jpg" alt="MJ 컨벤션 운영 사진">
             </div>
           </article>
 
-          <article class="card reference-card">
+          <article class="card reference-card" data-track="reference" data-event="reference_click" data-section="references" data-item-title="신도림 더세인트 운영 사진" data-image-src="/assets/images/현장사진/260314_신도림_더세인트.jpg">
             <div class="reference-media">
               <img src="/assets/images/현장사진/260314_신도림_더세인트.jpg" alt="신도림 더세인트 운영 사진">
             </div>
@@ -213,39 +212,39 @@
         </div>
 
         <div class="actions reference-actions">
-          <a class="btn btn-secondary" href="https://blog.naver.com/by__us" target="_blank" rel="noopener">운영 사진 더 보기</a>
+          <a class="btn btn-secondary" href="https://blog.naver.com/by__us" target="_blank" rel="noopener" data-track="click" data-event="external_link_click" data-section="references">운영 사진 더 보기</a>
         </div>
 
-        <div class="review-block">
+        <div class="review-block" id="reviews" data-track-section data-section-name="후기">
           <h3 class="review-title">후기 캡처</h3>
           <p class="review-caption">실제 예약자 후기도 함께 확인할 수 있습니다</p>
           <div class="review-grid">
-            <article class="card review-card">
+            <article class="card review-card" data-track="review" data-event="review_click" data-section="reviews" data-item-title="후기 캡처 1" data-image-src="/assets/images/후기캡처/후기캡처_1.jpg">
               <div class="review-media">
                 <img src="/assets/images/후기캡처/후기캡처_1.jpg" alt="후기 캡처 1">
               </div>
             </article>
-            <article class="card review-card">
+            <article class="card review-card" data-track="review" data-event="review_click" data-section="reviews" data-item-title="후기 캡처 2" data-image-src="/assets/images/후기캡처/후기캡처_2.jpg">
               <div class="review-media">
                 <img src="/assets/images/후기캡처/후기캡처_2.jpg" alt="후기 캡처 2">
               </div>
             </article>
-            <article class="card review-card">
+            <article class="card review-card" data-track="review" data-event="review_click" data-section="reviews" data-item-title="후기 캡처 3" data-image-src="/assets/images/후기캡처/후기캡처_3.jpg">
               <div class="review-media">
                 <img src="/assets/images/후기캡처/후기캡처_3.jpg" alt="후기 캡처 3">
               </div>
             </article>
-            <article class="card review-card">
+            <article class="card review-card" data-track="review" data-event="review_click" data-section="reviews" data-item-title="후기 캡처 4" data-image-src="/assets/images/후기캡처/후기캡처_4.jpg">
               <div class="review-media">
                 <img src="/assets/images/후기캡처/후기캡처_4.jpg" alt="후기 캡처 4">
               </div>
             </article>
-            <article class="card review-card">
+            <article class="card review-card" data-track="review" data-event="review_click" data-section="reviews" data-item-title="후기 캡처 5" data-image-src="/assets/images/후기캡처/후기캡처_5.jpg">
               <div class="review-media">
                 <img src="/assets/images/후기캡처/후기캡처_5.jpg" alt="후기 캡처 5">
               </div>
             </article>
-            <article class="card review-card">
+            <article class="card review-card" data-track="review" data-event="review_click" data-section="reviews" data-item-title="후기 캡처 6" data-image-src="/assets/images/후기캡처/후기캡처_6.jpg">
               <div class="review-media">
                 <img src="/assets/images/후기캡처/후기캡처_6.jpg" alt="후기 캡처 6">
               </div>
@@ -255,7 +254,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="operation-flow" data-track-section data-section-name="현장 기록">
       <div class="container">
         <div class="section-heading-rule" aria-hidden="true"></div>
         <h2>현장 기록</h2>
@@ -296,17 +295,19 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="contact" data-track-section data-section-name="문의">
       <div class="container card cta-card">
-        <p class="lead">문의는 카카오톡 사업자 채널로 진행됩니다. <br>예약 버튼을 클릭해 양식대로 입력해주세요💛</p>
+        <h2>편하게 문의하세요 🤍</h2>
+        <p class="lead">예식 일정, 장소, 보증인원, 운영 범위를 알려주시면<br>이용 가능 여부와 필요한 운영 구성을 더 정확하게 확인해드립니다.</p>
+        <p>일부 항목이 미정인 경우에도 상담 중 함께 정리할 수 있습니다.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="http://pf.kakao.com/_CSMyn/chat"> 문의 / 예약하기 </a>
+          <a class="btn btn-primary" href="#" data-inquiry-open data-source-button="contact_cta">예약 문의 문구 만들기</a>
         </div>
       </div>
     </section>
   </main>
 
-  <a class="floating-contact" href="http://pf.kakao.com/_CSMyn/chat" target="_blank" rel="noopener">문의</a>
+  <a class="floating-contact" href="#" data-inquiry-open data-source-button="floating_cta">문의하기</a>
 
   <footer class="site-footer">
     <div class="container footer-inner">

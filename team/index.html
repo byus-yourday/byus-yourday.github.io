@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spoqa-han-sans@3.0.1/css/SpoqaHanSansNeo.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body data-theme="light">
+<body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="/" aria-label="바이어스 홈">
@@ -29,19 +29,18 @@
         <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>☰</button>
         <nav aria-label="주 메뉴">
           <ul class="nav-list" data-nav-list>
-            <li><a class="nav-link" href="/">소개</a></li>
-            <li><a class="nav-link" href="/pricing/">가격</a></li>
-            <li><a class="nav-link" href="/booking/">예약</a></li>
-            <li><a class="nav-link" href="/team/">바이어스팀</a></li>
+            <li><a class="nav-link" href="/" data-target-section="hero">소개</a></li>
+            <li><a class="nav-link" href="/pricing/" data-target-section="price">가격</a></li>
+            <li><a class="nav-link" href="/booking/" data-target-section="booking">예약</a></li>
+            <li><a class="nav-link" href="/team/" data-target-section="team">바이어스팀</a></li>
           </ul>
         </nav>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="테마 전환">🌙</button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section">
+    <section class="section" id="team" data-track-section data-section-name="바이어스 멤버 소개">
       <div class="container">
         <h1>바이어스 멤버 소개</h1>
         <p class="lead">대표부부는 모든 축의대에 반드시 참여합니다.<br> 4인 운영시, 아무나 함께하지 않으며 대표부부의 가족, 15년 이상의 믿을 수 있는 지인으로만 운영합니다.<br>각자의 역할을 나누고, 사전에 정해진 원칙을 지키며 운영합니다.</p><br>
@@ -100,9 +99,20 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="team-principle" data-track-section data-section-name="운영 원칙">
       <div class="container card">
         <h3>바이어스는 아무나 함께 축의대에 서지 않습니다.</h3>
+      </div>
+    </section>
+
+    <section class="section" id="team-contact" data-track-section data-section-name="문의">
+      <div class="container card cta-card">
+        <h2>문의 내용을 먼저 정리해보세요</h2>
+        <p class="lead">예식일, 예식장, 운영 범위가 아직 모두 정해지지 않아도 괜찮습니다.</p>
+        <p>입력한 내용을 바탕으로 카카오톡에 붙여넣을 문의 문구를 만들어드립니다.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#" data-inquiry-open data-source-button="team_cta">예약 문의 문구 만들기</a>
+        </div>
       </div>
     </section>
   </main>
