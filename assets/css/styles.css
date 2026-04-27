@@ -844,16 +844,38 @@ body.modal-open {
 }
 
 .inquiry-modal__intro {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: color-mix(in srgb, white 74%, var(--bg));
+}
+
+.inquiry-modal__intro-title,
+.inquiry-modal__intro-copy {
+  margin: 0;
+  text-align: left;
+}
+
+.inquiry-modal__intro-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.inquiry-modal__intro-copy {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .inquiry-step {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   gap: 14px;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .inquiry-step__badge {
@@ -992,6 +1014,15 @@ body.modal-open {
   justify-content: flex-end;
   align-items: center;
   margin-top: 4px;
+}
+
+.inquiry-actions--result-top {
+  justify-content: flex-end;
+}
+
+.inquiry-actions--result-bottom {
+  justify-content: flex-end;
+  margin-top: -4px;
 }
 
 .inquiry-actions--guard {
