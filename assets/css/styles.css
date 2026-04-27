@@ -850,8 +850,10 @@ body.modal-open {
 .inquiry-step {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 14px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .inquiry-step__badge {

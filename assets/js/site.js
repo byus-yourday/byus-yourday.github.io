@@ -246,7 +246,7 @@
     modal.setAttribute('data-inquiry-modal', '');
     modal.innerHTML = [
       '<div class="inquiry-modal__backdrop" data-inquiry-close="backdrop"></div>',
-      '<div class="inquiry-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">',
+      '<div class="inquiry-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title" tabindex="-1">',
       '<div class="inquiry-modal__header">',
       '<div>',
       '<p class="inquiry-modal__eyebrow">문의 내용을 먼저 정리해보세요</p>',
@@ -264,7 +264,7 @@
       '<div class="inquiry-step__badge">Step 1</div>',
       '<div>',
       '<h3>문의 내용 입력</h3>',
-      '<p class="muted">가격 계산기가 아니라 예약 문의 문구 생성기입니다.</p>',
+      '<p class="muted">정해진 예식 정보를 입력해 주세요. 일부 항목이 미정인 경우에도 상담 중 함께 정리할 수 있습니다.</p>',
       '</div>',
       '</div>',
       '<form class="inquiry-form" data-inquiry-form>',
@@ -494,7 +494,7 @@
     });
 
     window.setTimeout(function () {
-      inquiryElements.firstInput.focus();
+      inquiryElements.dialog.focus();
     }, 20);
   }
 
@@ -677,7 +677,7 @@
         event.preventDefault();
         showInquiryStatus('입력값은 유지된 상태입니다. 필요한 부분만 수정해 주세요.', 'info');
         showInquiryScreen('form');
-        inquiryElements.firstInput.focus();
+        inquiryElements.dialog.focus();
         return;
       }
 
