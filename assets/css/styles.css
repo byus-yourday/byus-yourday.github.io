@@ -110,6 +110,18 @@ h3 { font-size: 1.2rem; }
 p { margin: 0 0 12px; }
 .lead { font-size: 1.08rem; }
 .muted { color: var(--muted); }
+.eyebrow {
+  justify-self: start;
+  margin-bottom: 0;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 10%, white);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
 
 .hero-title {
   display: flex;
@@ -380,6 +392,19 @@ p { margin: 0 0 12px; }
   line-height: 1.75;
 }
 
+.discount-item .discount-alert {
+  width: min(100%, 560px);
+  margin: 14px auto 0;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--primary) 42%, transparent);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--primary) 12%, white);
+  color: var(--primary);
+  font-size: clamp(0.95rem, 2.2vw, 1.08rem);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
 .discount-note {
   margin-top: 76px;
   color: var(--muted);
@@ -556,47 +581,22 @@ p { margin: 0 0 12px; }
   display: block;
 }
 
-.booking-survey-slot img {
-  width: 60%;
-  height: 60%;
-  margin: auto;
-  object-fit: contain;
-}
-
-.booking-followup-section {
-  display: grid;
-  gap: 22px;
-}
-
-.booking-followup-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+.booking-prep-slot {
+  min-height: 220px;
   margin-top: 8px;
 }
 
-.booking-followup-card {
-  display: grid;
-  gap: 12px;
-  align-content: start;
+.booking-prep-slot img {
+  width: 100%;
+  max-height: 300px;
+  margin: auto;
+  object-fit: contain;
+  background: #f8f2ec;
 }
 
-.booking-followup-card .step-num {
-  margin-bottom: 2px;
-}
-
-.booking-followup-card h3 {
+.booking-prep-caption {
+  margin-top: 10px;
   margin-bottom: 0;
-}
-
-.booking-followup-card p {
-  margin-bottom: 0;
-  color: var(--muted);
-}
-
-.booking-followup-actions {
-  justify-content: center;
-  margin-top: 6px;
 }
 
 .hero {
@@ -1062,7 +1062,6 @@ body.modal-open {
   .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .trust-grid { grid-template-columns: 1fr; }
   .review-media { height: 220px; }
-  .booking-followup-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .inquiry-grid { grid-template-columns: 1fr; }
 }
 
@@ -1085,12 +1084,16 @@ body.modal-open {
   }
 
   .nav-list.open { display: flex; }
-  .grid-2, .grid-4, .handoff-grid, .booking-followup-grid { grid-template-columns: 1fr; }
+  .grid-2, .grid-4, .handoff-grid { grid-template-columns: 1fr; }
   .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .review-grid { grid-template-columns: 1fr; }
 
   .trust-copy-card {
     padding: 28px 24px;
+  }
+
+  .booking-prep-slot {
+    min-height: 200px;
   }
 
   .review-media {
